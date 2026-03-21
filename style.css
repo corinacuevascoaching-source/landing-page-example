@@ -676,14 +676,20 @@ header {
 }
 
 /* ===== ABOUT SECTION ===== */
-.about {
-    padding: 5rem 2rem;
-    background: var(--white);
-}
-
 .about-content {
     max-width: 900px;
     margin: 0 auto 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 .about-text p {
@@ -1119,5 +1125,17 @@ header {
 
     .contact-options {
         grid-template-columns: 1fr;
+    }
+
+     .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        order: 1;
+    }
+
+    .about-text {
+        order: 2;
     }
 }
