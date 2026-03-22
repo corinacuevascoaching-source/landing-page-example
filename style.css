@@ -555,19 +555,25 @@ header {
 /* ===== ORGANIZATIONAL SECTION ===== */
 .organizational-section {
     padding: 5rem 2rem;
-    background: var(--background);   /* light brown */
+    background: var(--background);
+}
+
+.organizational-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;                /* ensures cards do not touch */
+    margin-top: 3rem;
 }
 
 .org-card {
     background: var(--white);
     padding: 1.75rem 1.75rem;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: var(--shadow);
     border-top: 4px solid var(--accent);
 }
 
 .org-card:hover {
-    /* no translate; just a soft shadow/color change if you like */
     box-shadow: var(--shadow-lg);
 }
 
@@ -575,7 +581,6 @@ header {
     font-size: 2rem;
     margin-bottom: 0.75rem;
 }
-
 
 /* ===== ASSESSMENTS SECTION ===== */
 .assessments-section {
@@ -616,7 +621,7 @@ header {
     object-fit: contain;
 }
 
-/* Remove lateral slide hover on assessment items */
+/* Remove lateral slide hover on legacy assessment items */
 .assessment-item,
 .assessment-item:hover {
     transform: none;
@@ -673,21 +678,20 @@ header {
 }
 
 .about .container {
-    max-width: 1100px;          /* a bit wider so both columns breathe */
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-
 .about-content {
     display: grid;
-    grid-template-columns: 1.1fr 1.5fr;  /* larger image column */
+    grid-template-columns: 1.1fr 1.5fr;
     gap: 3rem;
     align-items: center;
 }
 
 .about-image img {
     width: 100%;
-    max-width: 420px;           /* increase size */
+    max-width: 420px;
     border-radius: 12px;
     box-shadow: var(--shadow-lg);
     object-fit: cover;
@@ -700,6 +704,7 @@ header {
     line-height: 1.8;
 }
 
+/* Approach */
 .approach-section {
     padding: 4rem 2rem;
     background: var(--background);
@@ -720,6 +725,7 @@ header {
     text-align: center;
 }
 
+/* Credentials */
 .credentials-section {
     padding: 5rem 2rem;
     background: var(--white);
@@ -769,7 +775,7 @@ header {
     gap: 3rem;
     margin: 3rem auto;
     max-width: 1000px;
-    justify-items: center;   /* horizontally center cards in the grid */
+    justify-items: center;
 }
 
 .contact-card {
@@ -777,11 +783,11 @@ header {
     padding: 2.5rem 2rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
-    text-align: center;      /* center text + button */
+    text-align: center;
 }
 
 .contact-card .benefits-list {
-    text-align: left;        /* keep bullets left-aligned if you prefer */
+    text-align: left;
     margin: 1.5rem auto;
     max-width: 420px;
 }
@@ -821,7 +827,6 @@ header {
     color: var(--accent);
     font-weight: bold;
 }
-
 
 .contact-form button {
     margin-top: 0.5rem;
@@ -1078,8 +1083,9 @@ header {
         grid-template-columns: 1fr;
     }
 
-   .organizational-grid {
-        gap: 1.25rem;
+    .organizational-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .assessment-list {
@@ -1097,7 +1103,7 @@ header {
 
 @media (max-width: 768px) {
     .logo-image {
-        height: 80px;     
+        height: 80px;
         width: auto;
     }
 
