@@ -490,9 +490,9 @@ header {
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--secondary);
+    transform: none;
+    box-shadow: var(--shadow);
+    border-color: transparent;
 }
 
 .card.featured {
@@ -553,13 +553,17 @@ header {
 }
 
 /* ===== ORGANIZATIONAL SECTION ===== */
+.organizational-section {
+    padding: 5rem 2rem;
+    background: var(--background);   /* light brown */
+}
+
 .org-card {
     background: var(--white);
-    padding: 2rem;
+    padding: 1.75rem 1.75rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
     border-top: 4px solid var(--accent);
-    transition: var(--transition);
 }
 
 .org-card:hover {
@@ -574,6 +578,11 @@ header {
 
 
 /* ===== ASSESSMENTS SECTION ===== */
+.assessments-section {
+    padding: 5rem 2rem;
+    background: var(--white);
+}
+
 .assessment-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1084,8 +1093,8 @@ header {
         grid-template-columns: 1fr;
     }
 
-    .organizational-grid {
-        grid-template-columns: 1fr;
+   .organizational-grid {
+        gap: 1.25rem;
     }
 
     .assessment-list {
