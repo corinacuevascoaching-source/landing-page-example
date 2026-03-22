@@ -769,6 +769,7 @@ header {
     gap: 3rem;
     margin: 3rem auto;
     max-width: 1000px;
+    justify-items: center;   /* horizontally center cards in the grid */
 }
 
 .contact-card {
@@ -776,6 +777,13 @@ header {
     padding: 2.5rem 2rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
+    text-align: center;      /* center text + button */
+}
+
+.contact-card .benefits-list {
+    text-align: left;        /* keep bullets left-aligned if you prefer */
+    margin: 1.5rem auto;
+    max-width: 420px;
 }
 
 .contact-card .card-icon {
@@ -814,29 +822,6 @@ header {
     font-weight: bold;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 0.8rem;
-    border: 2px solid var(--secondary);
-    border-radius: 8px;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    transition: var(--transition);
-    background: var(--white);
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-}
 
 .contact-form button {
     margin-top: 0.5rem;
