@@ -689,6 +689,12 @@ header {
     align-items: center;
 }
 
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-image img {
     width: 100%;
     max-width: 420px;
@@ -697,6 +703,12 @@ header {
     object-fit: cover;
     display: block;
     margin: 0 auto;
+    transition: var(--transition);
+}
+
+.about-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(30, 42, 53, 0.15);
 }
 
 .about-text {
@@ -755,12 +767,26 @@ header {
 }
 
 .credentials-list li {
-    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
     background: var(--background);
     border-radius: 8px;
     border-left: 3px solid var(--accent);
     color: var(--dark);
     font-size: 1rem;
+}
+
+.credentials-list li img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.credentials-list li span {
+    line-height: 1.4;
 }
 
 /* ===== CONTACT SECTION ===== */
@@ -1120,15 +1146,23 @@ header {
         grid-template-columns: 1fr;
     }
 
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     .about-image {
-        margin-bottom: 2rem;
+        order: 1;
+        max-width: 350px;
+        margin: 0 auto;
     }
 
     .about-image img {
-        max-width: 320px;
+        max-width: 100%;
     }
 
     .about-text {
+        order: 2;
         text-align: left;
     }
 }
