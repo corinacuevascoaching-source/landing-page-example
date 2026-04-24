@@ -424,6 +424,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.cert-badge img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
 }
 
 .mba-badge {
