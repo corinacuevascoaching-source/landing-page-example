@@ -631,7 +631,7 @@ text-align: center;
 }
 
 .clifton-icon {
-    transform: scale(2.1);
+    transform: scale(1.65);
 }
 /* Remove lateral slide hover on legacy assessment items */
 .assessment-item,
