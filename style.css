@@ -598,10 +598,10 @@ text-align: center;
 }
 
 .assessment-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.75rem;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
     margin-top: 3rem;
 }
 
@@ -610,8 +610,8 @@ text-align: center;
     padding: 2rem 1.5rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
+    flex: 0 1 300px;
     text-align: center;
-    max-width: 320px;
 }
 
 .assessment-card h3 {
