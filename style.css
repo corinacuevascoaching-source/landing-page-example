@@ -565,9 +565,10 @@ header {
 }
 
 .organizational-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;                /* ensures cards do not touch */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
     margin-top: 3rem;
 }
 
@@ -577,6 +578,8 @@ header {
     border-radius: 12px;
     box-shadow: var(--shadow);
     border-top: 4px solid var(--accent);
+    flex: 0 1 300px;
+text-align: center;
 }
 
 .org-card:hover {
