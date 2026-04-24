@@ -630,6 +630,10 @@ text-align: center;
     object-fit: contain;
 }
 
+.clifton-icon {
+    transform: scale(1.35);
+}
+
 /* Remove lateral slide hover on legacy assessment items */
 .assessment-item,
 .assessment-item:hover {
