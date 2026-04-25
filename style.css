@@ -1236,3 +1236,42 @@ text-align: center;
         text-align: center;
     }
 }
+/* ===== CLIENT GAINS FEATURE SECTION ===== */
+.client-gains-feature {
+    padding: 5rem 2rem !important;
+    background: var(--primary) !important;
+    color: var(--white) !important;
+}
+
+.client-gains-feature h2,
+.client-gains-feature p {
+    color: var(--white) !important;
+}
+
+.gains-feature-inner {
+    display: grid !important;
+    grid-template-columns: 1fr 1.4fr !important;
+    gap: 3rem !important;
+    align-items: center !important;
+}
+
+.eyebrow {
+    color: var(--secondary) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    margin-bottom: 0.75rem !important;
+}
+
+.gains-list {
+    display: grid !important;
+    gap: 1rem !important;
+}
+
+.gains-list div {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-left: 4px solid var(--accent) !important;
+    padding: 1rem 1.25rem !important;
+    border-radius: 10px !important;
+    color: var(--white) !important;
+}
