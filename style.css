@@ -1215,7 +1215,7 @@ text-align: center;
 
 .gains-list div {
     background: rgba(255, 255, 255, 0.08) !important;
-    border-left: 4px solid var(--accent) !important;
+    border-left: none !important;
     padding: 1rem 1.25rem !important;
     border-radius: 10px !important;
     color: var(--white) !important;
