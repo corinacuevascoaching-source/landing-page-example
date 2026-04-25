@@ -1220,11 +1220,13 @@ text-align: center;
     border-radius: 10px !important;
     color: var(--white) !important;
 }
-.section-title::after {
+h1::after,
+h2::after,
+h3::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 55px;
   height: 2px;
   background: #d96d52;
-  margin: 16px auto 0;
+  margin-top: 14px;
 }
