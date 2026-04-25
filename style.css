@@ -1220,13 +1220,3 @@ text-align: center;
     border-radius: 10px !important;
     color: var(--white) !important;
 }
-h1::after,
-h2::after,
-h3::after {
-  content: "";
-  display: block;
-  width: 55px;
-  height: 2px;
-  background: #d96d52;
-  margin-top: 14px;
-}
