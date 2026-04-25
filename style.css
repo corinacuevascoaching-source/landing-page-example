@@ -1183,61 +1183,6 @@ text-align: center;
 }
 /* ===== CLIENT GAINS FEATURE SECTION ===== */
 .client-gains-feature {
-    padding: 5rem 2rem;
-    background: var(--primary);
-    color: var(--white);
-}
-
-.gains-feature-inner {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 3rem;
-    align-items: center;
-}
-
-.gains-feature-intro h2 {
-    color: var(--white);
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-.gains-feature-intro p {
-    color: rgba(255, 255, 255, 0.85);
-}
-
-.eyebrow {
-    color: var(--secondary);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 0.75rem;
-}
-
-.gains-list {
-    display: grid;
-    gap: 1rem;
-}
-
-.gains-list div {
-    background: rgba(255, 255, 255, 0.08);
-    border-left: 4px solid var(--accent);
-    padding: 1rem 1.25rem;
-    border-radius: 10px;
-    color: var(--white);
-    line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-    .gains-feature-inner {
-        grid-template-columns: 1fr;
-    }
-
-    .gains-feature-intro h2 {
-        text-align: center;
-    }
-}
-/* ===== CLIENT GAINS FEATURE SECTION ===== */
-.client-gains-feature {
     padding: 5rem 2rem !important;
     background: var(--primary) !important;
     color: var(--white) !important;
