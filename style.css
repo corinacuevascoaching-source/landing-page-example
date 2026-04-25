@@ -1181,3 +1181,38 @@ text-align: center;
         text-align: left;
     }
 }
+/* ===== CLIENT GAINS SECTION ===== */
+.client-gains {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #fdf7eb 0%, #fffaf2 100%);
+}
+
+.client-gains h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.gains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gain-item {
+    background: white;
+    border-radius: 14px;
+    padding: 1.4rem 1.25rem;
+    box-shadow: 0 10px 25px rgba(30,42,53,0.06);
+    border-top: 4px solid #d96a53;
+    font-weight: 500;
+    color: #1e2a35;
+    line-height: 1.5;
+    transition: all .25s ease;
+}
+
+.gain-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(30,42,53,0.10);
+}
